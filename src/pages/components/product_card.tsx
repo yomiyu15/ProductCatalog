@@ -24,42 +24,45 @@ const ProductCard = ({ product, index }: ProductCatalogProps) => {
             href={`/products/${product?.id}`}
             LinkComponent={Link}
           >
-            <CardMedia
-              component="img"
-              height="140"
-              image={product?.image}
-              alt={product?.name}
-              sx={{
-                filter: "grayscale(100%)", // Apply greyscale filter by default
-                transition: "filter 0.3s, transform 0.3s", // Add transition for smooth effect
-                "&:hover": {
-                  filter: "none", // Remove greyscale filter on hover
-                  transform: "scale(1.05)", // Add small zoom in effect on hover
-                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Add a subtle shadow
-                },
-              }}
-            />
+           <CardMedia
+  component="img"
+  height="140"
+  image={product?.image}
+  alt={product?.name}
+  sx={{
+    transition: "transform 0.3s, boxShadow 0.3s", // Smooth transition for transform and boxShadow
+    "&:hover": {
+      transform: "scale(1.05)", // Add small zoom in effect on hover
+      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)", // Add a subtle shadow on hover
+    },
+  }}
+/>
+
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="h6" component="div">
                 {product?.name}
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 {product?.description}
               </Typography>
-              <Typography variant="h6" color="#007bff">
-                ${product?.price}
+              <Typography variant="h6" color="#00adef">
+                {product?.price}
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
             <Button
+            style={{color:"#00adef" }}
               href={`/products/${product?.id}`}
               LinkComponent={Link}
               size="small"
             >
-              Details
+              view more
             </Button>
+            {}
           </CardActions>
+         
+
         </Card>
       </Grow>
     </Grid>

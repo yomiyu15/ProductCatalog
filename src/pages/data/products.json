@@ -1,70 +1,70 @@
 [
     {
         "id": 1,
-        "name": "Product 1",
+        "name": "Deposit Products",
         "price": 172,
         "image": "https://picsum.photos/200/300?random=1",
         "description": "This is a description for Product 1."
     },
     {
         "id": 2,
-        "name": "Product 2",
+        "name": "Local currency deposit products",
         "price": 81,
         "image": "https://picsum.photos/200/300?random=2",
         "description": "This is a description for Product 2."
     },
     {
         "id": 3,
-        "name": "Product 3",
+        "name": "Foreign Currency Deposit Products",
         "price": 273,
         "image": "https://picsum.photos/200/300?random=3",
         "description": "This is a description for Product 3."
     },
     {
         "id": 4,
-        "name": "Product 4",
+        "name": "Credit/Loan Banking Products",
         "price": 195,
         "image": "https://picsum.photos/200/300?random=4",
         "description": "This is a description for Product 4."
     },
     {
         "id": 5,
-        "name": "Product 5",
+        "name": "Saving/Deposit Banking Products",
         "price": 467,
         "image": "https://picsum.photos/200/300?random=5",
         "description": "This is a description for Product 5."
     },
     {
         "id": 6,
-        "name": "Product 6",
+        "name": "Local currency Deposit Products",
         "price": 261,
         "image": "https://picsum.photos/200/300?random=6",
         "description": "This is a description for Product 6."
     },
     {
         "id": 7,
-        "name": "Product 7",
+        "name": "Foreign Currency Deposit Products",
         "price": 217,
         "image": "https://picsum.photos/200/300?random=7",
         "description": "This is a description for Product 7."
     },
     {
         "id": 8,
-        "name": "Product 8",
+        "name": "IFB Financing products",
         "price": 208,
         "image": "https://picsum.photos/200/300?random=8",
         "description": "This is a description for Product 8."
     },
     {
         "id": 9,
-        "name": "Product 9",
+        "name": "Mobile/Digital/ Banking Products",
         "price": 194,
         "image": "https://picsum.photos/200/300?random=9",
         "description": "This is a description for Product 9."
     },
     {
         "id": 10,
-        "name": "Product 10",
+        "name": "Card Banking Products",
         "price": 464,
         "image": "https://picsum.photos/200/300?random=10",
         "description": "This is a description for Product 10."

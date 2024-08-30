@@ -3,17 +3,20 @@
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 0; /* Remove padding for full screen */
+  margin: 0; /* Ensure no margin constraints */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height of the viewport */
+  box-sizing: border-box; /* Ensure padding and border are included in width and height */
 }
 
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
+  display: flex; /* Adjust display to flex for consistency */
+  justify-content: center; /* Center align content */
+  align-items: center; /* Center align items */
   font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
+  max-width: none; /* Remove max-width constraint */
+  width: 100%; /* Full width */
   z-index: 2;
   font-family: var(--font-mono);
 }
@@ -42,8 +45,8 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+  width: 100%; /* Full width */
+  max-width: none; /* Remove max-width constraint */
 }
 
 .card {
@@ -135,7 +138,7 @@
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    max-width: 320px;
+    max-width: none; /* Remove max-width constraint */
     text-align: center;
   }
 
