@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
-  padding: 0; /* Remove padding for full screen */
+  padding: 10; /* Remove padding for full screen */
   margin: 0; /* Ensure no margin constraints */
   width: 100%; /* Full width */
-  height: 100vh; /* Full height of the viewport */
+  height: 50%; /* Full height of the viewport */
   box-sizing: border-box; /* Ensure padding and border are included in width and height */
 }
 
@@ -105,6 +105,23 @@
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
+}
+/* Home.module.css */
+@keyframes wave {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.wavy-animation {
+  animation: wave 5s ease-in-out infinite;
+}
+
+/* Ensure you have a style for the center div if needed */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {

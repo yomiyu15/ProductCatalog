@@ -1,9 +1,15 @@
 export interface ProductProps {
   id: number;
   name: string;
-  price: number;
+  category: string;
   image: string;
   description: string;
+  keyfeatures: string[]; // Array of strings
+  benefit: string[]; // Array of strings
+  eligibleCandidates: string[]; // Array of strings
+  target: string[]; // Array of strings
+  crossSellingProducts: string[]; // Array of strings
+  remarks: string;
 }
 
 export interface PaginationProps {

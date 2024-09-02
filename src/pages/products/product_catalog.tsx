@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect } from "react";
 import {
   Container,
@@ -6,8 +5,8 @@ import {
   Pagination,
   Stack,
   TextField,
-  SelectChangeEvent,
   InputAdornment,
+  SelectChangeEvent,
 } from "@mui/material";
 import ProductCard from "@/pages/components/product_card";
 import { fetchProducts } from "@/utils";
@@ -15,23 +14,22 @@ import { ProductProps } from "@/types";
 import ProductFilters from "@/pages/components/product_filters";
 import ProductCatalogSkeleton from "@/pages/components/product_catalog_skeleton";
 import NoProductFound from "@/pages/components/no_product_found";
-import SearchIcon from '@mui/icons-material/Search'; // Import the SearchIcon component from MUI
+import SearchIcon from "@mui/icons-material/Search";
 
 const ProductCatalog = () => {
   const [products, setProducts] = useState<ProductProps[]>([]);
   const [isLoading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortByPrice, setSortByPrice] = useState("");
-  const [isLatestFilterEnabled, setIsLatestFilterEnabled] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const productsPerPage = 9;
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
+
+  const productsPerPage = 8 ;
 
   useEffect(() => {
     async function fetchData() {
       try {
         const data = await fetchProducts();
         setProducts(data);
-        setLoading(false);
       } catch (error) {
         console.error("Error fetching data", error);
       } finally {
@@ -42,36 +40,32 @@ const ProductCatalog = () => {
     fetchData();
   }, []);
 
-  const handlePriceSortChange = (event: SelectChangeEvent) => {
-    setSortByPrice(event.target.value as string);
-  };
-
-  const handleLatestFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setIsLatestFilterEnabled(event.target.checked);
-  };
-
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
   };
 
-  let sortedProducts = [...products];
-  if (sortByPrice === "price-low-high") {
-    sortedProducts.sort((a, b) => a.price - b.price);
-  } else if (sortByPrice === "price-high-low") {
-    sortedProducts.sort((a, b) => b.price - a.price);
-  }
+  const handleCategoryChange = (event: SelectChangeEvent) => {
+    setSelectedCategory(event.target.value);
+  };
 
-  let filteredProducts = sortedProducts;
-
-  if (isLatestFilterEnabled) {
-    filteredProducts = sortedProducts.sort((a, b) => b.id - a.id);
-  }
-
-  if (searchQuery.trim() !== "") {
-    filteredProducts = filteredProducts.filter((product) =>
-      product.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-  }
+  // Filtered Products based on category and search query
+  const filteredProducts = products.filter((product) => {
+    const matchesSearchQuery = product.name
+      ? product.name.toLowerCase().includes(searchQuery.toLowerCase())
+      : false;
+  
+    if (!matchesSearchQuery) {
+      return false;
+    }
+  
+    const category = product.category ? String(product.category).toLowerCase() : "";
+    const matchesCategory = selectedCategory
+      ? category === selectedCategory.toLowerCase()
+      : true;
+  
+    return matchesCategory;
+  });
+  
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
@@ -85,62 +79,67 @@ const ProductCatalog = () => {
   };
 
   if (isLoading) return <ProductCatalogSkeleton />;
-  if (!currentProducts.length) {
-    return <NoProductFound isBack={true} />;
+
+  if (!filteredProducts.length) {
+    return (
+      <Container>
+        <NoProductFound isBack={true} />
+      </Container>
+    );
   }
 
   return (
-    <Container>
+    <Container >
       <Stack
-        direction={{ xs: "column", sm: "row" }} // Stack horizontally on larger screens
-        spacing={10}
+        direction={{ xs: "column", sm: "column" }}
+        spacing={4}
         alignItems="center"
-        style={{ marginBottom: "1rem" }}
+        style={{ marginBottom: "2rem" ,}}
+
       >
-        {/* Search Box */}
         <TextField
           label="Search By Product Name ..."
           variant="outlined"
           value={searchQuery}
           onChange={handleSearchChange}
           sx={{
-            width: { xs: "100%", sm: "75%", md: "60%" }, // Adjust width based on screen size
-            borderRadius: "40px", // Slightly more rounded corners for a smoother look
+           
+            width: { xs: "100%", sm: "75%", md: "70%" },
+            borderRadius: "3px",
             "& .MuiOutlinedInput-root": {
-              borderRadius: "8px", // Ensure border radius is applied to input
+              borderRadius: "5px",
               "& fieldset": {
-                borderColor: "#00adef", // Custom border color
-                borderWidth: 1, // Thicker border for a more defined look
+                borderColor: "#000",
+                borderWidth: 1,
               },
               "&:hover fieldset": {
-                borderColor: "#0081c2", // Slightly darker border color on hover
+                borderColor: "#0081c2",
               },
               "&.Mui-focused fieldset": {
-                borderColor: "#007ab8", // Darker border color when focused
-              
+                borderColor: "#007ab8",
               },
               "& input": {
-                padding: "8px 14px", // Adjust padding to make the text field shorter
-                fontSize: "0.875rem", // Smaller font size for a shorter appearance
+                padding: "8px 14px",
+                fontSize: "0.875rem",
               },
             },
             "& .MuiInputLabel-root": {
-              color: "#00adef", // Custom label color
+              color: "#00adef",
             },
             "& .MuiInputLabel-root.Mui-focused": {
-              color: "#007ab8", // Darker label color when focused
+              color: "#007ab8",
             },
             "& .MuiOutlinedInput-input": {
-              color: "#333", // Input text color
+              color: "#333",
             },
             "& .MuiFormLabel-root": {
-              fontWeight: 400, // Bold font weight for the label
+              fontWeight: 400,
             },
           }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <SearchIcon sx={{ color: "#00adef" }} /> {/* Custom icon color */}
+                <SearchIcon sx={{ color: "#00adef" }} />
               </InputAdornment>
             ),
           }}
@@ -148,26 +147,18 @@ const ProductCatalog = () => {
         />
 
         <ProductFilters
-          sortByPrice={sortByPrice}
-          handlePriceSortChange={handlePriceSortChange}
-          isLatestFilterEnabled={isLatestFilterEnabled}
-          handleFilterChange={handleLatestFilterChange}
+          selectedCategory={selectedCategory}
+          handleCategoryChange={handleCategoryChange}
         />
       </Stack>
 
-      {currentProducts.length > 0 ? (
-        <Grid container spacing={5}>
-          {currentProducts.map((product, index) => (
-            <ProductCard key={product.id} product={product} index={index} />
-          ))}
-        </Grid>
-      ) : (
-        <Container>
-          <NoProductFound isBack={false} />
-        </Container>
-      )}
+      <Grid container spacing={5}>
+        {currentProducts.map((product, index) => (
+          <ProductCard key={product.id} product={product} index={index} />
+        ))}
+      </Grid>
 
-      <Stack alignItems="center" mt={10}>
+      <Stack alignItems="center" mt={1}>
         <Pagination
           count={Math.ceil(filteredProducts.length / productsPerPage)}
           page={currentPage}

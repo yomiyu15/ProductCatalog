@@ -9,7 +9,7 @@ const mockProduct: ProductCatalogProps = {
     id: 1,
     name: "Sample Product",
     description: "Sample Description",
-    price: 10.99,
+    category: 10.99,
     image: "sample.jpg",
   },
   index: 0,

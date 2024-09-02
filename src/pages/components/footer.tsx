@@ -31,20 +31,20 @@ const Footer = () => {
       spacing={isSmallScreen ? 3 : 6}
       justifyContent="space-between"
       sx={{
-        py: 6,
+        py: 10,
         px: 4,
         mt: 'auto',
         width: '100%',
         color: theme.palette.mode === 'light' ? '#333' : '#fff',
-        backgroundColor: '#ffffff', // Set background color to white
+        background: "linear-gradient(to bottom, #fff, #00adef)", // Gradient background
         boxShadow: theme.shadows[2],
-        mx: '0',  // Remove any horizontal margin
+        mx: '0', // Remove any horizontal margin
       }}
       component="footer"
     >
       {/* About Us Section */}
       <Grid item xs={12} sm={6} md={3}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
+        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', letterSpacing: 1 }}>
           About Us
         </Typography>
         <Typography variant="body1" color="text.secondary">
@@ -54,7 +54,7 @@ const Footer = () => {
 
       {/* Contact Section */}
       <Grid item xs={12} sm={6} md={3}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
+        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', letterSpacing: 1 }}>
           Contact
         </Typography>
         <div>
@@ -69,7 +69,7 @@ const Footer = () => {
 
       {/* Follow Us Section */}
       <Grid item xs={12} sm={6} md={3}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
+        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', letterSpacing: 1 }}>
           Follow Us
         </Typography>
         <div>
@@ -122,7 +122,7 @@ const Footer = () => {
 
       {/* Newsletter Signup */}
       <Grid item xs={12} sm={6} md={3}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
+        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', letterSpacing: 1 }}>
           Newsletter
         </Typography>
         <Typography variant="body1" color="text.secondary" gutterBottom>
@@ -135,7 +135,7 @@ const Footer = () => {
             placeholder="Your email"
             sx={{ flex: 1, backgroundColor: theme.palette.background.paper, borderRadius: 1 }}
           />
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="primary" sx={{ px: 3 }}>
             Subscribe
           </Button>
         </div>
@@ -148,13 +148,14 @@ const Footer = () => {
             position: 'fixed',
             bottom: 30,
             right: 30,
-            backgroundColor: theme.palette.primary.main,
+            background: "linear-gradient(to bottom, #00ADEE, #fff)", // Gradient background
             color: '#fff',
             borderRadius: '50%',
             padding: 8,
             boxShadow: theme.shadows[3],
             cursor: 'pointer',
-            transition: 'background-color 0.3s',
+            transition: 'background-color 0.3s, transform 0.3s',
+         
           }}
           onClick={handleBackToTop}
         >
