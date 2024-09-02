@@ -30,7 +30,7 @@ const SingleProduct = ({ product }: SingleProductProps) => {
   return (
     <Container>
       <Grow in>
-        <Paper elevation={3} style={{ padding: "100px" }}>
+        <Paper elevation={3} style={{ padding: "0px" }}>
           <Button
             variant="outlined"
             color="primary"
@@ -59,12 +59,12 @@ const SingleProduct = ({ product }: SingleProductProps) => {
                 color="#007bff"
                 sx={{ marginBottom: "12px" }}
               >
-                Price: ${product?.price}
+                category: ${product?.category}
               </Typography>
               <Stack alignItems="center">
                 <Box
                   sx={{
-                    width: "75%",
+                    width: "100%",
                     height: 320,
                     background: "#ccc",
                     border: "1px solid #ccc",
