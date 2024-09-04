@@ -1,0 +1,769 @@
+[
+  {
+      "id": 1,
+      "name": "ORDINARY SAVING ACCOUNT",
+      "category": "Conventional Banking Products",
+      "image": "assets/ordinary.jpeg",
+      "description": "an interest-bearing option designed to cater to ",
+      "productoverview": "Is an interest-bearing option designed to cater to a diverse range of customers with a modest initial deposit of just Birr 50.",
+      "keyfeatures": [
+          "It earns a competitive 7% interest rate, compounded.",
+          "It can be opened without an initial balance, allowing customers to establish a banking relationship effortlessly.",
+          "Flexible account ownership options: individual, joint, trust, legalized cooperatives, and organizations."
+      ],
+      "benefit": [
+          "Is an interest-bearing option designed to cater to a diverse range of customers with a modest initial deposit of just Birr 50."
+      ],
+      "eligibleCandidates": [
+          "Tailored for individuals and entities, including cooperatives and organizations, seeking a versatile and rewarding savings account monthly, maximizing the growth of the savings."
+      ],
+      "target": [
+          "Cooperatives",
+          "Organizations",
+          "Groups like Idir and Iqub"
+      ],
+      "remarks": "This savings account is not just about preserving customers’ wealth; it is accessibility that they deserve.",
+      "crossSellingProducts": [
+          "COOPPAY EBIRR",
+          "YOUTH"
+      ],
+      "isNew": true
+  },
+  {
+      "id": 2,
+      "name": "WADIA",
+      "category": "Interest Free Banking Products",
+      "image": "assets/wadia2.jpeg",
+      "description": "This is a description for Product 2.",
+      "productoverview": "",
+      "keyfeatures": [
+          "It earns a competitive 7% interest rate, compounded.",
+          "It can be opened without an initial balance, allowing customers to establish a banking relationship effortlessly.",
+          "Flexible account ownership options: individual, joint, trust, legalized cooperatives, and organizations.",
+          "Unrestricted deposits and withdrawals, subject to regulations imposed by relevant authorities.",
+          "Convenience of seamless transactions through various channels, including ATM/POS cards, internet banking, and mobile services.",
+          "Zero transaction fees, providing our customers with a cost-effective and hassle-free banking experience."
+      ],
+      "benefit": [
+          "WADIA"
+      ],
+      "eligibleCandidates": [
+          "Individuals and entities seeking interest-free banking solutions."
+      ],
+      "target": [
+          "Cooperatives",
+          "Organizations",
+          "Groups like Idir and Iqub"
+      ],
+      "remarks": "This is a description for Product 2.",
+      "crossSellingProducts": [
+          "FARMERS",
+          "GAMME"
+      ],
+      "isNew": false
+  },
+  {
+      "id": 3,
+      "name": "COOPPAY EBIRR",
+      "category": "Digital Banking Products",
+      "image": "assets/copay.jpg",
+      "description": "This is a description for Product 3.",
+      "productoverview": "",
+      "keyfeatures": [
+          "It earns a competitive 7% interest rate, compounded.",
+          "It can be opened without an initial balance, allowing customers to establish a banking relationship effortlessly.",
+          "Flexible account ownership options: individual, joint, trust, legalized cooperatives, and organizations.",
+          "Unrestricted deposits and withdrawals, subject to regulations imposed by relevant authorities.",
+          "Convenience of seamless transactions through various channels, including ATM/POS cards, internet banking, and mobile services.",
+          "Zero transaction fees, providing our customers with a cost-effective and hassle-free banking experience."
+      ],
+      "benefit": [
+          "COOPPAY EBIRR"
+      ],
+      "eligibleCandidates": [
+          "Individuals and entities seeking digital banking solutions."
+      ],
+      "target": [
+          "Groups",
+          "Organizations using digital payment solutions."
+      ],
+      "remarks": "This is a description for Product 3.",
+      "crossSellingProducts": [
+          "OMNI CHANNEL",
+          "MICHU DIGITAL LENDING"
+      ],
+      "isNew": false
+  },
+  {
+      "id": 4,
+      "name": "OMNI CHANNEL",
+      "category": "Digital Banking Products",
+      "image": "assets/coopapp.jpeg",
+      "description": "This is a description for Product 4.",
+      "productoverview": "",
+      "keyfeatures": [
+          "It earns a competitive 7% interest rate, compounded.",
+          "It can be opened without an initial balance, allowing customers to establish a banking relationship effortlessly.",
+          "Flexible account ownership options: individual, joint, trust, legalized cooperatives, and organizations.",
+          "Unrestricted deposits and withdrawals, subject to regulations imposed by relevant authorities.",
+          "Convenience of seamless transactions through various channels, including ATM/POS cards, internet banking, and mobile services.",
+          "Zero transaction fees, providing our customers with a cost-effective and hassle-free banking experience."
+      ],
+      "benefit": [
+          "OMNI CHANNEL"
+      ],
+      "eligibleCandidates": [
+          "Individuals and entities needing integrated banking services."
+      ],
+      "target": [
+          "Digital users",
+          "Tech-savvy clients."
+      ],
+      "remarks": "This is a description for Product 4.",
+      "crossSellingProducts": [
+          "COOPPAY EBIRR",
+          "CRM"
+      ],
+      "isNew": false
+  },
+  {
+      "id": 5,
+      "name": "MICHU DIGITAL LENDING",
+      "category": "Digital Banking Products",
+      "image": "/assets/michu2.jpeg",
+      "description": "",
+      "productoverview": "0-14 years. It is established in the child's name but is typically managed by parents or guardians until the child reaches an age where he/she can independently oversee their",
+      "keyfeatures": [
+          "It earns a competitive 7% interest rate, compounded.",
+          "It can be opened without an initial balance, allowing customers to establish a banking relationship effortlessly.",
+          "Flexible account ownership options: individual, joint, trust, legalized cooperatives, and organizations.",
+          "Unrestricted deposits and withdrawals, subject to regulations imposed by relevant authorities.",
+          "Convenience of seamless transactions through various channels, including ATM/POS cards, internet banking, and mobile services.",
+          "Zero transaction fees, providing our customers with a cost-effective and hassle-free banking experience."
+      ],
+      "benefit": [
+          "MICHU DIGITAL LENDING"
+      ],
+      "eligibleCandidates": [
+          "Individuals and businesses seeking digital loan options."
+      ],
+      "target": [
+          "Small and medium-sized enterprises (SMEs)."
+      ],
+      "remarks": "This is a description for Product 5.",
+      "crossSellingProducts": [
+          "OMNI CHANNEL",
+          "FARMERS"
+      ],
+      "isNew": false
+  },
+  {
+      "id": 6,
+      "name": "GAMME",
+      "category": "Conventional Banking Products",
+      "image": "assets/gamme.jpeg",
+      "description": "JUNIOR SAVINGS ACCOUNT",
+      "productoverview": "0-14 years. It is established in the child's name but is typically managed by parents or guardians until the child reaches an age where they can independently oversee their account.",
+      "keyfeatures": [
+          "The account is registered in the child's name, setting the foundation for early financial education.",
+          "Bears an interest rate of 7.175%, fostering the growth of their savings.",
+          "Children demonstrating independent income, who initiate their account, enjoy unrestricted access to their deposits.",
+          "Receive a Birr 100 credit incentive when the average six-month deposit level reaches Birr 30,000 and above."
+      ],
+      "benefit": [
+          "children as they approach adult- hood.",
+          "Instill a savings culture from an early age, empowering parents to",
+          "Convenience of fee-free transac- tions, making banking interactions hassle-free.",
+          "Unlock additional incentives pro- vided by the bank, subject to speci-REMARfiSIt is a unique opportunity to pave the"
+
+
+
+
+
+
+      ],
+      "eligibleCandidates": [
+          "This account caters to newborns, infants, children under the age of fifteen"
+         
+      ],
+      "target": [
+          "Newborn at Hospital",
+          "Student at school and Kinder- garten",
+          "NGOs that work with kids."
+      ],
+      "remarks": "It is a unique opportunity to pave the way for children’s financial future.",
+      "crossSellingProducts": [
+          "Gudunfa Gamme Saving account.",
+          "When they are of age, Darga- go saving account"
+      ]
+  },
+  {
+      "id": 7,
+      "name": "YOUTH",
+      "category": "Conventional Banking Products",
+      "image": "assets/youth.jpg",
+      "description": "SAVING ACCOUNT",
+      "productoverview": "",
+      "keyfeatures": [
+          "It earns a competitive 7% interest rate, compounded.",
+          "It can be opened without an initial balance, allowing customers to establish a banking relationship effortlessly.",
+          "Flexible account ownership options: individual, joint, trust, legalized cooperatives, and organizations.",
+          "Unrestricted deposits and withdrawals, subject to regulations imposed by relevant authorities.",
+          "Convenience of seamless transactions through various channels, including ATM/POS cards, internet banking, and mobile services.",
+          "Zero transaction fees, providing our customers with a cost-effective and hassle-free banking experience."
+      ],
+      "benefit": [
+          "YOUTH"
+      ],
+      "eligibleCandidates": [
+          "Young individuals seeking a savings account."
+      ],
+      "target": [
+          "Students",
+          "Young professionals."
+      ],
+      "remarks": "This is a description for Product 7.",
+      "crossSellingProducts": [
+          "ORDINARY SAVING ACCOUNT",
+          "MICHU DIGITAL LENDING"
+      ],
+      "isNew": false
+  },
+  {
+      "id": 8,
+      "name": "SINQE",
+      "category": "Conventional Banking Products",
+      "image": "assets/sinqe.jpeg",
+      "description": "SAVING ACCOUNT",
+      "productoverview": "",
+      "keyfeatures": [
+          "It earns a competitive 7% interest rate, compounded.",
+          "It can be opened without an initial balance, allowing customers to establish a banking relationship effortlessly.",
+          "Flexible account ownership options: individual, joint, trust, legalized cooperatives, and organizations.",
+          "Unrestricted deposits and withdrawals, subject to regulations imposed by relevant authorities.",
+          "Convenience of seamless transactions through various channels, including ATM/POS cards, internet banking, and mobile services.",
+          "Zero transaction fees, providing our customers with a cost-effective and hassle-free banking experience."
+      ],
+      "benefit": [
+          "SINQE"
+      ],
+      "eligibleCandidates": [
+          "Individuals and organizations seeking a simple savings account."
+      ],
+      "target": [
+          "Individual savers.",
+          "Small businesses."
+      ],
+      "remarks": "This is a description for Product 8.",
+      "crossSellingProducts": [
+          "ORDINARY SAVING ACCOUNT",
+          "YOUTH"
+      ],
+      "isNew": false
+  },
+    {
+        "id": 9,
+        "name": "FARMERS",
+        "category": "Conventional Banking Products",
+        "image": "assets/farmer.jpg",
+        "description": "SAVING ACCOUNT",
+        "productoverview": "",
+        "keyfeatures": [
+            "It earns a competitive 7% interest rate, compounded.",
+            "It can be opened without an initial balance, allowing customers to establish a banking relationship effortlessly.",
+            "Flexible account ownership options: individual, joint, trust, legalized cooperatives, and organizations.",
+            "Unrestricted deposits and withdrawals, subject to regulations imposed by relevant authorities.",
+            "Convenience of seamless transactions through various channels, including ATM/POS cards, internet banking, and mobile services.",
+            "Zero transaction fees, providing our customers with a cost-effective and hassle-free banking experience."
+        ],
+        "benefit": [
+            "FARMERS"
+        ],
+        "eligibleCandidates": [
+            "Farmers",
+            "Agricultural cooperatives"
+        ],
+        "target": [
+            "Agricultural sector",
+            "Rural communities."
+        ],
+        "remarks": "This is a description for Product 9.",
+        "crossSellingProducts": [
+            "MICHU DIGITAL LENDING",
+            "COOPPAY EBIRR"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 10,
+        "name": "OMNI CHANNEL",
+        "category": "Digital Banking Products",
+        "image": "assets/coopapp.jpeg",
+        "description": "Integrated banking services through various digital channels.",
+        "productoverview": "",
+        "keyfeatures": [
+            "Provides seamless banking experiences across multiple digital platforms.",
+            "Includes features like online banking, mobile banking, and ATM services.",
+            "Offers secure and convenient access to banking services from anywhere."
+        ],
+        "benefit": [
+            "OMNI CHANNEL"
+        ],
+        "eligibleCandidates": [
+            "Tech-savvy individuals",
+            "Businesses needing integrated digital banking solutions"
+        ],
+        "target": [
+            "Urban customers",
+            "Businesses",
+            "Frequent digital users."
+        ],
+        "remarks": "This is a description for Product 10.",
+        "crossSellingProducts": [
+            "MICHU DIGITAL LENDING",
+            "COOPPAY EBIRR"
+        ],
+        "isNew": true
+    },
+    
+      {
+          "id": 11,
+          "name": "DIASPORA",
+          "category": "Conventional Banking Products",
+          "image": "assets/diaspora.jpg",
+          "description": "Traditional banking services with a focus on customer needs.",
+          "productoverview": "",
+          "keyfeatures": [
+              "Offers personalized banking solutions tailored to customer needs.",
+              "Includes a range of deposit and loan products.",
+              "Focuses on relationship management and customer service."
+          ],
+          "benefit": [
+              "CONVENTIONAL"
+          ],
+          "eligibleCandidates": [
+              "Individuals",
+              "Small businesses",
+              "Corporates"
+          ],
+          "target": [
+              "Urban and rural customers",
+              "Businesses",
+              "Retail clients"
+          ],
+          "remarks": "This is a description for Product 11.",
+          "crossSellingProducts": [
+              "MICHU DIGITAL LENDING",
+              "COOPPAY EBIRR"
+          ],
+          "isNew": false
+      },
+      {
+          "id": 12,
+          "name": "MICROFINANCE",
+          "category": "Microfinance Products",
+          "image": "assets/michu.png",
+          "description": "Empowering small businesses and individuals with microloans.",
+          "productoverview": "",
+          "keyfeatures": [
+              "Provides access to small-scale financial services for underserved communities.",
+              "Includes microloans, savings, and insurance products.",
+              "Aims to promote financial inclusion and economic development."
+          ],
+          "benefit": [
+              "MICROFINANCE"
+          ],
+          "eligibleCandidates": [
+              "Low-income individuals",
+              "Small and micro enterprises"
+          ],
+          "target": [
+              "Rural and urban low-income populations",
+              "Small businesses seeking financial growth."
+          ],
+          "remarks": "This is a description for Product 12.",
+          "crossSellingProducts": [
+              "MICHU DIGITAL LENDING",
+              "COOPPAY EBIRR"
+          ],
+          "isNew": false
+
+      },
+      {
+          "id": 13,
+          "name": "INSURANCE",
+          "category": "Insurance Products",
+          "image": "assets/insurance.png",
+          "description": "Comprehensive insurance solutions for individuals and businesses.",
+          "productoverview": "",
+          "keyfeatures": [
+              "Offers a wide range of insurance products including life, health, and property insurance.",
+              "Provides financial protection against unexpected events.",
+              "Tailored solutions to meet the unique needs of different customer segments."
+          ],
+          "benefit": [
+              "INSURANCE"
+          ],
+          "eligibleCandidates": [
+              "Individuals",
+              "Businesses",
+              "Families"
+          ],
+          "target": [
+              "Customers seeking financial security",
+              "Business owners needing asset protection."
+          ],
+          "remarks": "This is a description for Product 13.",
+          "crossSellingProducts": [
+              "MICHU DIGITAL LENDING",
+              "COOPPAY EBIRR"
+          ],
+          "isNew": false
+      },
+      
+        {
+            "id": 14,
+            "name": "SAVINGS ACCOUNT",
+            "category": "Savings Products",
+            "image": "assets/saving.jpg",
+            "description": "Secure and flexible savings accounts with competitive interest rates.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Offers various types of savings accounts with attractive interest rates.",
+                "Easy access to funds with multiple withdrawal options.",
+                "Online and mobile banking services available."
+            ],
+            "benefit": [
+                "SAVINGS ACCOUNT"
+            ],
+            "eligibleCandidates": [
+                "Individuals",
+                "Students",
+                "Small business owners"
+            ],
+            "target": [
+                "People seeking to save money securely",
+                "Individuals looking for flexible savings options."
+            ],
+            "remarks": "This is a description for Product 14.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 15,
+            "name": "FIXED DEPOSIT",
+            "category": "Deposit Products",
+            "image": "assets/fixed.jpg",
+            "description": "High-interest fixed deposits for secure long-term savings.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Provides higher interest rates for fixed-term deposits.",
+                "Ensures capital safety with guaranteed returns.",
+                "Available for various tenures to suit different financial goals."
+            ],
+            "benefit": [
+                "FIXED DEPOSIT"
+            ],
+            "eligibleCandidates": [
+                "Individuals",
+                "Businesses",
+                "Retirees"
+            ],
+            "target": [
+                "Customers seeking secure, long-term investment options.",
+                "Individuals looking to earn higher returns on savings."
+            ],
+            "remarks": "This is a description for Product 15.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 16,
+            "name": "PERSONAL LOAN",
+            "category": "Loan Products",
+            "image": "assets/personalloan.jpg",
+            "description": "Flexible personal loans to meet your financial needs.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Quick and easy approval process for personal loans.",
+                "Competitive interest rates with flexible repayment terms.",
+                "Loans can be used for various personal expenses."
+            ],
+            "benefit": [
+                "PERSONAL LOAN"
+            ],
+            "eligibleCandidates": [
+                "Salaried individuals",
+                "Self-employed professionals",
+                "Pensioners"
+            ],
+            "target": [
+                "Individuals needing financial assistance for personal needs.",
+                "Customers seeking fast loan approval and disbursement."
+            ],
+            "remarks": "This is a description for Product 16.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 17,
+            "name": "HOME LOAN",
+            "category": "Loan Products",
+            "image": "assets/home.jpg",
+            "description": "Affordable home loans to help you buy your dream home.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Low-interest rates on home loans.",
+                "Flexible repayment options and tenures.",
+                "Loans available for purchase, construction, and renovation of homes."
+            ],
+            "benefit": [
+                "HOME LOAN"
+            ],
+            "eligibleCandidates": [
+                "First-time home buyers",
+                "Existing homeowners looking to upgrade",
+                "Real estate investors"
+            ],
+            "target": [
+                "Customers looking to purchase or construct a home.",
+                "Individuals seeking to refinance their home loan."
+            ],
+            "remarks": "This is a description for Product 17.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "AUTO LOAN",
+            "category": "Loan Products",
+            "image": "assets/auto.jpg",
+            "description": "Convenient auto loans for purchasing new or used vehicles.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Flexible financing options for new and used vehicles.",
+                "Competitive interest rates and easy repayment plans.",
+                "Quick approval and disbursal process."
+            ],
+            "benefit": [
+                "AUTO LOAN"
+            ],
+            "eligibleCandidates": [
+                "Individuals",
+                "Businesses",
+                "Self-employed professionals"
+            ],
+            "target": [
+                "Customers looking to finance the purchase of a vehicle.",
+                "Individuals seeking easy and fast auto loan processing."
+            ],
+            "remarks": "This is a description for Product 18.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 19,
+            "name": "EDUCATION LOAN",
+            "category": "Loan Products",
+            "image": "assets/gamme.jpeg",
+            "description": "Education loans to help finance your studies.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Loans available for higher education in domestic and international institutions.",
+                "Low-interest rates with flexible repayment schedules.",
+                "Covers tuition fees, living expenses, and other educational costs."
+            ],
+            "benefit": [
+                "EDUCATION LOAN"
+            ],
+            "eligibleCandidates": [
+                "Students",
+                "Parents",
+                "Working professionals seeking further education"
+            ],
+            "target": [
+                "Individuals looking to fund their education or that of their children.",
+                "Students seeking affordable loan options for their studies."
+            ],
+            "remarks": "This is a description for Product 19.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 20,
+            "name": "AGRICULTURAL LOAN",
+            "category": "Loan Products",
+            "image": "assets/agricultural.jpeg",
+            "description": "Loans designed to support agricultural activities and rural development.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Tailored loan products for farmers and agribusinesses.",
+                "Low-interest rates and flexible repayment terms.",
+                "Supports crop production, equipment purchase, and rural development projects."
+            ],
+            "benefit": [
+                "AGRICULTURAL LOAN"
+            ],
+            "eligibleCandidates": [
+                "Farmers",
+                "Agricultural cooperatives",
+                "Rural businesses"
+            ],
+            "target": [
+                "Individuals and businesses involved in agriculture.",
+                "Customers looking to invest in rural development projects."
+            ],
+            "remarks": "This is a description for Product 20.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 21,
+            "name": "BUSINESS LOAN",
+            "category": "Loan Products",
+            "image": "assets/business.jpeg",
+            "description": "Flexible business loans to help your business grow.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Loans available for small, medium, and large enterprises.",
+                "Competitive interest rates and flexible repayment plans.",
+                "Financing for working capital, expansion, and business projects."
+            ],
+            "benefit": [
+                "BUSINESS LOAN"
+            ],
+            "eligibleCandidates": [
+                "Small businesses",
+                "Startups",
+                "Corporations"
+            ],
+            "target": [
+                "Business owners seeking financial assistance for growth.",
+                "Entrepreneurs looking for startup capital."
+            ],
+            "remarks": "This is a description for Product 21.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 22,
+            "name": "TRADE FINANCE",
+            "category": "Trade Products",
+            "image": "assets/trade.jpg",
+            "description": "Trade finance solutions to support your international business.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Comprehensive trade finance products including letters of credit, guarantees, and export finance.",
+                "Supports international trade with secure and efficient financial solutions.",
+                "Customized trade finance services to meet business needs."
+            ],
+            "benefit": [
+                "TRADE FINANCE"
+            ],
+            "eligibleCandidates": [
+                "Exporters",
+                "Importers",
+                "Businesses involved in international trade"
+            ],
+            "target": [
+                "Companies engaged in cross-border trade.",
+                "Businesses looking for secure trade finance options."
+            ],
+            "remarks": "This is a description for Product 22.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 23,
+            "name": "CREDIT CARD",
+            "category": "Card Products",
+            "image": "assets/debit.jpeg",
+            "description": "Credit cards with attractive rewards and benefits.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Wide range of credit cards with various reward programs.",
+                "Global acceptance with secure payment options.",
+                "Flexible repayment options and competitive interest rates."
+            ],
+            "benefit": [
+                "CREDIT CARD"
+            ],
+            "eligibleCandidates": [
+                "Individuals",
+                "Business owners",
+                "Frequent travelers"
+            ],
+            "target": [
+                "Customers looking for convenient and secure payment options.",
+                "Individuals seeking reward programs and travel benefits."
+            ],
+            "remarks": "This is a description for Product 23.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        },
+        {
+            "id": 24,
+            "name": "DEBIT CARD",
+            "category": "Card Products",
+            "image": "assets/debit.jpeg",
+            "description": "Convenient debit cards linked to your savings or current account.",
+            "productoverview": "",
+            "keyfeatures": [
+                "Secure and convenient access to your funds.",
+                "Widely accepted at ATMs and point-of-sale terminals.",
+                "Comes with online and mobile banking features."
+            ],
+            "benefit": [
+                "DEBIT CARD"
+            ],
+            "eligibleCandidates": [
+                "Individuals",
+                "Students",
+                "Small business owners"
+            ],
+            "target": [
+                "Customers looking for easy access to their bank accounts.",
+                "Individuals seeking secure payment options."
+            ],
+            "remarks": "This is a description for Product 24.",
+            "crossSellingProducts": [
+                "MICHU DIGITAL LENDING",
+                "COOPPAY EBIRR"
+            ],
+            "isNew": false
+        }
+    ]
+    
+  
+  
+
+
