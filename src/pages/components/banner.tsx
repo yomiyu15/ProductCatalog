@@ -75,7 +75,7 @@ const Banner = () => {
 
       {/* Buttons with hover animation */}
       <Container>
-        <div style={{ display: "flex", gap: "15px", justifyContent: "center", marginBottom: "10px" }}>
+        <div style={{ display: "flex", gap: "15px", justifyContent: "center", marginBottom: "2px" }}>
           <Button
             variant="primary"
             href="https://coopbankoromia.com.et/deposit-products/ordinary-demand-deposit-account/"

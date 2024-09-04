@@ -101,7 +101,7 @@ const ProductCatalog = () => {
         direction={{ xs: "column", sm: "column" }}
         spacing={4}
         alignItems="center"
-        style={{ marginBottom: "2rem" }}
+        style={{ marginBottom: "5rem" }}
       >
         <TextField
           label="Search By Product Name ..."
