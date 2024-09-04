@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import {
   Grid,
@@ -11,9 +9,11 @@ import {
   CardContent,
   Typography,
   Grow,
+  Box,
+  Fade
 } from "@mui/material";
-import { ProductCatalogProps } from "@/types";
 import Link from "next/link";
+import { ProductCatalogProps } from "@/types";
 
 const ProductCard = ({ product, index }: ProductCatalogProps) => {
   return (
@@ -21,8 +21,8 @@ const ProductCard = ({ product, index }: ProductCatalogProps) => {
       item
       xs={12}
       sm={6}
-      md={4} // Reduced width for medium screens
-      lg={3} // Reduced width for large screens
+      md={4}
+      lg={3}
       data-testid="product-card"
     >
       <Grow in={true} timeout={index * 300}>
@@ -31,6 +31,7 @@ const ProductCard = ({ product, index }: ProductCatalogProps) => {
             borderRadius: "12px",
             boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.1)",
             overflow: "hidden",
+            position: "relative",
             transform: "scale(1)",
             transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
             "&:hover": {
@@ -39,13 +40,33 @@ const ProductCard = ({ product, index }: ProductCatalogProps) => {
             },
           }}
         >
+          {product?.isNew && (
+            <Fade in={product.isNew} timeout={2000}>
+              <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                backgroundColor: "#00adef",
+                color: "white",
+                padding: "4px 8px",
+                borderRadius: "0px 0px 12px 0px",
+                zIndex: 10,
+                fontSize: "0.75rem", // Adjust font size if needed
+                animation: "bounce 2s infinite", // Apply the new bouncing animation
+              }}
+            >
+              New Product
+            </Box>
+            </Fade>
+          )}
           <CardActionArea
             href={`/products/${product?.id}`}
             LinkComponent={Link}
           >
             <CardMedia
               component="img"
-              height="180" // Adjusted height to fit the reduced width
+              height="100"
               image={product?.image}
               alt={product?.name}
               sx={{
@@ -56,20 +77,26 @@ const ProductCard = ({ product, index }: ProductCatalogProps) => {
                 },
               }}
             />
-
             <CardContent sx={{ padding: "16px" }}>
-              <Typography gutterBottom variant="body1" component="div" color="#00adef" fontWeight={600}>
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                color="#00adef"
+                fontWeight={600}
+              >
                 {product?.name}
+              </Typography>
+              <Typography variant="body2" color="text.primary">
+              <span style={{ color: "#333", fontWeight: "bold" }}> {product?.category}</span>  
               </Typography>
               <Typography variant="body2" color="text.secondary" noWrap>
                 {product?.description}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {product?.category}
-              </Typography>
+             
             </CardContent>
           </CardActionArea>
-          <CardActions sx={{ padding: "8px 16px" }}>
+          <CardActions sx={{ padding: "8px 16px", display: "flex", justifyContent: "center" }}>
             <Button
               style={{ color: "#007BB5", fontWeight: 600 }}
               href={`/products/${product?.id}`}

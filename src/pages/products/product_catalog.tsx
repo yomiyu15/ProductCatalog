@@ -22,8 +22,9 @@ const ProductCatalog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [showNewProducts, setShowNewProducts] = useState<boolean>(false);
 
-  const productsPerPage = 8 ;
+  const productsPerPage = 8;
 
   useEffect(() => {
     async function fetchData() {
@@ -48,28 +49,34 @@ const ProductCatalog = () => {
     setSelectedCategory(event.target.value);
   };
 
-  // Filtered Products based on category and search query
+  const handleNewProductsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setShowNewProducts(event.target.checked);
+  };
+
+  // Filtered Products based on category, search query, and new product status
   const filteredProducts = products.filter((product) => {
     const matchesSearchQuery = product.name
       ? product.name.toLowerCase().includes(searchQuery.toLowerCase())
       : false;
-  
-    if (!matchesSearchQuery) {
-      return false;
-    }
-  
+
     const category = product.category ? String(product.category).toLowerCase() : "";
     const matchesCategory = selectedCategory
       ? category === selectedCategory.toLowerCase()
       : true;
-  
-    return matchesCategory;
+
+    const matchesNewProducts = showNewProducts
+      ? product.isNew
+      : true;
+
+    return matchesSearchQuery && matchesCategory && matchesNewProducts;
   });
-  
+
+  // Sort filtered products so that new products appear first
+  const sortedProducts = filteredProducts.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = filteredProducts.slice(
+  const currentProducts = sortedProducts.slice(
     indexOfFirstProduct,
     indexOfLastProduct
   );
@@ -89,13 +96,12 @@ const ProductCatalog = () => {
   }
 
   return (
-    <Container >
+    <Container>
       <Stack
         direction={{ xs: "column", sm: "column" }}
         spacing={4}
         alignItems="center"
-        style={{ marginBottom: "2rem" ,}}
-
+        style={{ marginBottom: "2rem" }}
       >
         <TextField
           label="Search By Product Name ..."
@@ -103,7 +109,6 @@ const ProductCatalog = () => {
           value={searchQuery}
           onChange={handleSearchChange}
           sx={{
-           
             width: { xs: "100%", sm: "75%", md: "70%" },
             borderRadius: "3px",
             "& .MuiOutlinedInput-root": {
@@ -149,6 +154,8 @@ const ProductCatalog = () => {
         <ProductFilters
           selectedCategory={selectedCategory}
           handleCategoryChange={handleCategoryChange}
+          showNewProducts={showNewProducts}
+          handleNewProductsChange={handleNewProductsChange}
         />
       </Stack>
 

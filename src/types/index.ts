@@ -10,6 +10,8 @@ export interface ProductProps {
   target: string[]; // Array of strings
   crossSellingProducts: string[]; // Array of strings
   remarks: string;
+  isNew: boolean;
+  productoverview :string;
 }
 
 export interface PaginationProps {

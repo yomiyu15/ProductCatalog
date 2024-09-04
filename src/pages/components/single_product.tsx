@@ -55,7 +55,13 @@ const SingleProduct = ({ product }: SingleProductProps) => {
               <Link underline="hover" color="#00adef" href="/">
                 Product Catalogs
               </Link>
-              <Typography color="#00adef">{product?.name}</Typography>
+              <Typography
+  color="#00adef"
+  sx={{ textTransform: "lowercase" }}
+>
+  {product?.name}
+</Typography>
+
             </Breadcrumbs>
             <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
@@ -118,6 +124,9 @@ const SingleProduct = ({ product }: SingleProductProps) => {
                       >
                         PRODUCT OVERVIEW:
                       </Typography>
+                      <Typography mt={1} variant="body2" color="text.secondary">
+                    {product?.productoverview}
+                  </Typography>
                     </CardContent>
                   </Card>
                 </Box>
@@ -145,6 +154,13 @@ const SingleProduct = ({ product }: SingleProductProps) => {
                   >
                     Benefits
                   </Typography>
+                    <Typography mt={1} variant="body2" color="text.secondary">
+                    <ul>
+                      {product?.benefit?.map((benefit, index) => (
+                        <li key={index}>{benefit}</li>
+                      ))}
+                    </ul>
+                  </Typography>
 
                   {/* Eligible Candidates */}
                   <Divider sx={{ margin: "20px 0", borderColor: "#ee7b28" }} />
@@ -163,20 +179,9 @@ const SingleProduct = ({ product }: SingleProductProps) => {
                   </Typography>
 
                   {/* Benefits */}
-                  <Divider sx={{ margin: "20px 0", borderColor: "#ee7b28" }} />
-                  <Typography
-                    variant="h6"
-                    sx={{ fontWeight: "bold", color: "#00adef" }}
-                  >
-                    Benefits
-                  </Typography>
-                  <Typography mt={1} variant="body2" color="text.secondary">
-                    <ul>
-                      {product?.benefit?.map((benefit, index) => (
-                        <li key={index}>{benefit}</li>
-                      ))}
-                    </ul>
-                  </Typography>
+                  {/* <Divider sx={{ margin: "20px 0", borderColor: "#ee7b28" }} /> */}
+                  
+                
 
                   {/* Target Customers */}
 
